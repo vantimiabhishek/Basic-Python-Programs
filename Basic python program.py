@@ -1,4 +1,3 @@
-
 #1.python program to print your name
 n="v.abhishek"
 print(n)
@@ -140,5 +139,149 @@ a=int(input("enter the number"))
 if (a%5==0 and a%11==0):
     print("the number is divisible by 5 and 11")
 else:
-    print("the number is not dividible")    
+    print("the number is not dividible") 
+
+#22.Simple Calculator
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Choose operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+n = int(input("Enter the operation number (1-4): "))
+
+if n == 1:
+    print("Result:", a + b)
+elif n == 2:
+    print("Result:", a - b)
+elif n == 3:
+    print("Result:", a * b)
+elif n == 4:
+    if b != 0:
+        print("Result:", a / b)
+    else:
+        print("Error! Division by zero.")
+else:
+    print("Invalid operation number")
+
+
+#23.Program to check the day of the week based on user input
+week = int(input("Enter the week number (1 for Monday, 7 for Sunday): "))
+
+if week == 1:
+    print("MONDAY")
+elif week == 2:
+    print("TUESDAY")
+elif week == 3:
+    print("WEDNESDAY")
+elif week == 4:
+    print("THURSDAY")
+elif week == 5:
+    print("FRIDAY")
+elif week == 6:
+    print("SATURDAY")
+elif week == 7:
+    print("SUNDAY")
+else:
+    print("Invalid input! Please enter a number between 1 and 7.")   
+
+
+
+    
+#24.write a python program to print the days_months
+
+m = int(input("Enter the month number (1-12): "))
+
+if m == 2:
+    print("28 or 29 days")
+elif m in [1, 3, 5, 7, 8, 10, 12]:
+    print("31 days")
+elif m in [4, 6, 9, 11]:
+    print("30 days")
+else:
+    print("Invalid month number")  
+
+
+    
+#25.write a python program to check the body temperature(FEVER,NORMAL&COLD)
+
+temp = int(input("Check the body temperature: "))
+
+if temp >= 100:
+    print("FEVER")
+elif 97 <= temp <= 99:
+    print("NORMAL")
+elif temp < 97:
+    print("COLD")
+else:
+    print("Invalid temperature")
+
+
+
+#26.write a python program to give the vote eligible for a person
+
+v = int(input("Enter your age: "))
+
+if v >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+
+#27. Program to check username and password credentials
+
+user = "V.Abhishek"
+password = 1234
+username = input("Enter your username: ")
+
+if username != user:
+    print("Invalid username")
+else:
+    password_input = int(input("Enter your password: "))
+
+    if password_input == password:
+        print("Login successful")
+    else:
+        print("Invalid password")  
+
+
+#28.program to assign grades based on marks
+m = int(input("Enter your marks: "))
+
+if m >= 90:
+    print("Grade A")
+elif m >= 80:
+    print("Grade B")
+elif m >= 60:
+    print("Grade C")
+elif m >= 50:
+    print("Grade D")
+else:
+    print("FAIL") 
+
+#29.student  pass and exam if they score at least 35 marks in theory and 50  marks in pratical. if  they score is more than 60marks total
+theory_marks=int(input("enter theory marks"))
+pratical_marks=int(input("enter pratical marks"))
+total_marks=theory_marks+pratical_marks
+if theory_marks>=35 and pratical_marks>=50 and total_marks>60:
+    print("student passed")
+else:
+    print("student failed")   
+
+
+
+#30.a person can acess an atm onli if they insert atm enter the correct pin the account not locked
+atm_card_inserted = True
+correct_pin = True
+acc_locked = False
+
+if atm_card_inserted and correct_pin and not acc_locked:
+    print("Access Granted: you can use the ATM")
+else:
+    print("Access Denied: ATM access not allowed")
+
 
